@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Consulta del clima</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      background: linear-gradient(to bottom, #74b9ff, #a29bfe);
+      padding: 40px;
+    }
+    .card {
+      max-width: 350px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .temp { font-size: 48px; font-weight: bold; margin: 10px 0; }
+    .desc { font-size: 18px; color: #555; text-transform: capitalize; }
+    .error { color: red; margin-top: 10px; }
+    input { padding: 10px; font-size: 16px; width: 200px; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Consulta del Clima</h1>
+  <input type="text" id="ciudad" placeholder="Ej: Madrid" />
+  <button id="buscar">Buscar</button>
+  <div id="resultado"></div>
+  <div id="mensaje" class="error"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
