@@ -41,6 +41,7 @@ function mostrarClima(datos){
         const temp = Math.round(datos.main.temp);
         const description = datos.weather[0].description;
         const humedad = datos.main.humidity;
+        const velocidad = datos.wind.speed;
         const icono = datos.weather[0].icon;
         const iconoUrl = `https://openweathermap.org/img/wn/${icono}@2x.png`;
 
@@ -51,10 +52,11 @@ function mostrarClima(datos){
                 <h2>${nombre}</h2>
                 <img src="${iconoUrl}" alt="${description}">
                 <div class="temp">${temp}</div>
-                <div></div>
+                <div>${humedad}%</div>
+                <div>${velocidad}</div>
                 <div class="desc">${description}</div>
             </div>
-        `
+        `;
 
     }catch(err){
         divMensaje.textContent = 'Error al mostrar los datos';
