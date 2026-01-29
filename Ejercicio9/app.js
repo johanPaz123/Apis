@@ -1,4 +1,4 @@
-import {APPI_KEY} from "../config.js"
+import {API_KEY_OPEN_WEATHER} from "../config.js"
 
 const inputCiudad = document.getElementById("ciudad");
 const btnBuscar = document.getElementById("buscar");
@@ -16,7 +16,7 @@ let tiempoRestante = 10;
 
 async function obtenerClima(ciudad) {
   divMensaje.textContent = "Actualizando...";
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${APPI_KEY}&units=metric&lang=es`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY_OPEN_WEATHER}&units=metric&lang=es`;
 
   try {
     const response = await fetch(url);

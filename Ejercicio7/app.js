@@ -1,4 +1,4 @@
-import {ACCESS_KEY} from "../config.js"
+import {API_KEY_UNSPLASH} from "../config.js"
 const inputUsuario = document.getElementById("query");
 const btnBuscar = document.getElementById("btnBuscar");
 const galeria = document.getElementById("galeria");
@@ -16,7 +16,7 @@ btnBuscar.addEventListener('click', function(){
 
 
 async function buscarImagenes(termino) {
-  const url = `https://api.unsplash.com/search/photos?query=${termino}&client_id=${ACCESS_KEY}&per_page=10`;
+  const url = `https://api.unsplash.com/search/photos?query=${termino}&client_id=${API_KEY_UNSPLASH}&per_page=10`;
 
   try {
     const response = await fetch(url);
