@@ -1,4 +1,4 @@
-const API_KEY = "1ff11a55bf2c1927c1dcb0d0146266da";
+import {APPI_KEY} from "../config";
 
 const inputCiudad = document.getElementById("ciudad");
 const btnBuscar = document.getElementById("buscar");
@@ -9,7 +9,7 @@ const btnLimpiar = document.getElementById("limpiar");
 async function obtenerClima(ciudad) {
   divMensaje.textContent = "Cargando...";
   divResultado.innerHTML = "";
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY}&units=metric&lang=es`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${APPI_KEY}&units=metric&lang=es`;
 
   try {
     const response = await fetch(url);

@@ -1,4 +1,4 @@
-const ACCESS_KEY = "HoEpDHsGwStuKbZB078fTYGV-1pt5svR3SH37gHUQMA";
+import {ACCESS_KEY} from "../config.js"
 const inputUsuario = document.getElementById("query");
 const btnBuscar = document.getElementById("btnBuscar");
 const galeria = document.getElementById("galeria");
