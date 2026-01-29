@@ -1,4 +1,4 @@
-import {APPI_KEY} from "../../../../config.js"
+import {API_KEY_OPEN_WEATHER} from "../../../../config.js"
 
 const inputUsuario = document.getElementById("ciudad");
 const btnBuscar = document.getElementById("btnBuscar");
@@ -18,7 +18,7 @@ btnBuscar.addEventListener('click', function() {
 
 
 async function buscarClima(ciudad) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${APPI_KEY}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY_OPEN_WEATHER}`;
 
   try {
     const response = await fetch(url);
