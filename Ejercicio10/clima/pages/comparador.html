@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElClima - Comparador</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Clima Actual</a></li>
+            <li><a href="comparador.html" class="active">Comparador</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Comparador de Temperaturas</h1>
+        <div class="busqueda-doble">
+            <input type="text" id="ciudad1" placeholder="Ciudad 1">
+            <input type="text" id="ciudad2" placeholder="Ciudad 2">
+            <button id="btnComparar">Comparar</button>
+        </div>
+        <p id="resultado-comparacion"></p>
+    </header>
+
+    <main class="main-comparador">
+        <div id="contenedor-tarjetas">
+            <div id="info1" class="card-empty">Esperando ciudad 1...</div>
+            <div id="info2" class="card-empty">Esperando ciudad 2...</div>
+        </div>
+    </main>
+
+    <script type="module" src="../js/comparar.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-import {API_KEY_OPEN_WEATHER} from "../config";
+import {API_KEY_OPEN_WEATHER} from "../config.js";
 
 const inputCiudad = document.getElementById("ciudad");
 const btnBuscar = document.getElementById("buscar");
