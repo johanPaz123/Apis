@@ -18,7 +18,7 @@ btnUsuarios.addEventListener("click", generarUsuarios);
 
 // ===== FUNCIONES CLIMA =====
 async function consultarClima() {
-  const ciudad = inputCiudad.value.trim();
+  const ciudad = inputCiudad.value.trim()
 
   if (!ciudad) {
     divErrorClima.textContent = "Por favor, introduce una ciudad";
