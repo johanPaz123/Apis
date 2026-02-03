@@ -1,3 +1,0 @@
-export const API_KEY_OPEN_WEATHER = "1ff11a55bf2c1927c1dcb0d0146266da";
-
-export const API_KEY_UNSPLASH = "HoEpDHsGwStuKbZB078fTYGV-1pt5svR3SH37gHUQMA";
