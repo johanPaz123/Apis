@@ -24,7 +24,7 @@ async function buscarFotos() {
 }
 
 function pintarGaleria(fotos) {
-  galeria.innerHTML = ""; // Limpiar
+  galeria.innerHTML = "";
 
   if (fotos.length === 0) {
     galeria.innerHTML =
@@ -38,7 +38,6 @@ function pintarGaleria(fotos) {
     imgElement.alt = foto.alt_description;
     imgElement.className = "img-item";
 
-    // Requerimiento: Abrir links.html en nueva pestaña al hacer clic
     imgElement.addEventListener("click", () => {
       window.open(foto.links.html, "_blank");
     });
@@ -47,7 +46,6 @@ function pintarGaleria(fotos) {
   });
 }
 
-// Eventos
 btnBuscar.addEventListener("click", buscarFotos);
 inputBusqueda.addEventListener("keypress", (e) => {
   if (e.key === "Enter") buscarFotos();

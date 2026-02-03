@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Meteorológico y Usuarios</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🌦️ Dashboard Meteorológico y Usuarios 👥</h1>
+
+      <!-- Sección Clima -->
+      <section class="seccion">
+        <h2>Consulta del Clima</h2>
+        <div class="controles">
+          <input type="text" id="ciudad" placeholder="Ej: Barcelona" />
+          <button id="btn-clima">Consultar Clima</button>
+        </div>
+        <div id="resultado-clima"></div>
+        <div id="error-clima" class="error"></div>
+      </section>
+
+      <!-- Sección Usuarios -->
+      <section class="seccion">
+        <h2>Generador de Usuarios Aleatorios</h2>
+        <div class="controles">
+          <button id="btn-usuarios">Generar 6 Usuarios</button>
+        </div>
+        <div id="resultado-usuarios" class="grid"></div>
+        <div id="error-usuarios" class="error"></div>
+      </section>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

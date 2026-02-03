@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ElClima - Inicio</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html" class="active">Clima Actual</a></li>
-            <li><a href="./pages/comparador.html">Comparador</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html" class="active">Clima Actual</a></li>
+        <li><a href="./pages/comparador.html">Comparador</a></li>
+      </ul>
     </nav>
 
     <header>
-        <h1>ElClima</h1>
-        <div class="busqueda-simple">
-            <label for="ciudad">Ciudad:</label>
-            <input type="text" id="ciudad" placeholder="Introduce una ciudad">
-            <button id="btnBuscar">Buscar</button>
-        </div>
+      <h1>ElClima</h1>
+      <div class="busqueda-simple">
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" placeholder="Introduce una ciudad" />
+        <button id="btnBuscar">Buscar</button>
+      </div>
     </header>
 
     <main>
-        <div id="informacion">
-            </div>
+      <div id="informacion"></div>
+      <div id="historialCiudades"></div>
     </main>
 
     <script type="module" src="js/app.js"></script>
-</body>
+  </body>
 </html>
